@@ -18,7 +18,7 @@ a = int(a)
 b = input('Enter number b: ')
 b = int(b)
 
-x = input('Enert number x: ')
+x = input('Enter number x: ')
 x = int(x)
 
 if x == a:
