@@ -33,7 +33,7 @@ player2_dice = randint(1, dice_sides)
 print(player1_name + ' rolls ' + str(player1_dice))
 print(player2_name + ' rolls ' + str(player2_dice))
 
-if player1_dice> player2_dice:
+if player1_dice > player2_dice:
     print(player1_name + ' wins!')
 elif player2_dice > player1_dice:
     print(player2_name + ' wins!')

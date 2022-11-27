@@ -14,6 +14,7 @@ Enter number: 4
 
 """
 
+
 number = input('Enter number: ')
 number = int(number)
 

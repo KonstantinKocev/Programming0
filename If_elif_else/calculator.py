@@ -45,4 +45,5 @@ elif oper == '/':
 if result != False:
     print('Result is ' + str(result))
 else:
-    print('We do not supprt that operation!')
+    print('We do not support that operation!')
+
