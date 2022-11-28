@@ -16,3 +16,16 @@ n! предсталява произведението на всички чис�
 
 number = int(input('Enter number: '))
 
+start = 1
+
+total_num = 1
+
+while start <= number:
+
+    total_num = total_num * start
+
+    start = start + 1
+
+    print(start)
+
+    print('The product of the numbers in interval of 1 to ' + str(number) + ' is ' + str(total_num))

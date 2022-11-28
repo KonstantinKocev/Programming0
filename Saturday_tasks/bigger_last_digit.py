@@ -26,29 +26,18 @@ number_m = int(input('Enter number m: '))
 last_n = number_n %10
 last_m = number_m %10
 
+#В случай, че двете числа не завършват на една и съща цифра. >>>
+
 if last_n > last_m:
     print('The bigger number is n' + '(' + str(last_n) + ')')
 elif last_m > last_n:
     print('The bigger number is m' + '(' + str(last_m) + ')')
+
+#В случай, че двете числа завършват на една и съща цифра,
+# се гледа кое първоначално въведено число е по-голямо. >>>
+
 else:
     if number_n > number_m:
         print(number_n)
     elif number_m > number_n:
         print(number_m)
-
-"""
-В случай, че двете числа не завършват на една и съща цифра. >>>
-
- if last_n > last_m:
-     print('The bigger number is n' + '(' + str(last_n) + ')')
- elif last_m > last_n:
-     print('The bigger number is m' + '(' + str(last_m) + ')')
-
-В случай, че двете числа завършват на една и съща цифра се гледа кое първоначално въведено число е по-голямо. >>>
-
- else:
-     if number_n > number_m:
-         print(number_n)
-     elif number_m > number_n:
-         print(number_m)
-"""
