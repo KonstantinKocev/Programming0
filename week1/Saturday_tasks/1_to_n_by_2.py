@@ -19,4 +19,3 @@ while start <= n:
     print(start)
 
     start = start + 2
-
