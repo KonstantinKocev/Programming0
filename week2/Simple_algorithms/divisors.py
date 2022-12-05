@@ -16,6 +16,13 @@
 n = int(input('Enter number: '))
 
 start  = 1
+small_n = n - 1
 divisors = []
 
-while start <= n:
+while start <= small_n:
+    if n % start == 0:
+        divisors += [start]
+
+    start += 1
+
+print('Divisors: ' + str(divisors))
