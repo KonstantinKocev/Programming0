@@ -1,13 +1,12 @@
 n = list(input('Enter your string please: '))
 
-vowels  = ["aeiouyAEIOUY"]
-counter = 1
-vow_total = 0
+vowels  = "aeiouyAEIOUY"
+counter = 0
+vowels_list = []
 
 for i in n:
     if i in vowels:
-        print(i)
+        vowels_list += [i]
         counter += 1
-        vow_total += counter
 
-print(vow_total)
+print(vowels_list, [counter])

@@ -22,9 +22,9 @@ total_num = 1
 
 while start <= number:
 
-    total_num = total_num * start
+    total_num *= start
 
-    start = start + 1
+    start += 1
 
     print(start)
 

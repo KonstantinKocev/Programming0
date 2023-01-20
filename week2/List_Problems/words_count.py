@@ -20,7 +20,7 @@ python is found 2 times.
 """
 
 n_word = input('Enter word: ')
-n = int(input('Enetr count of words: '))
+n = int(input('Enter count of words: '))
 
 n_count = 1
 words = []

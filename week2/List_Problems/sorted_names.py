@@ -23,13 +23,13 @@ Rado
 
 """
 
-n = int(input('Enetr count of names: '))
+n = int(input('Enter count of names: '))
 
 n_count = 1
 names = []
 
 while n_count <= n:
-    name = input('Enter name:')
+    name = input('Enter name: ')
     names = names + [name]
     n_count += 1
 

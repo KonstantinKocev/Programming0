@@ -15,9 +15,7 @@
 
 n = int(input('Enter number: '))
 
-start  = 1
-small_n = n - 1
-divisors = []
+start, small_n, divisors = 1, n - 1, []
 
 while start <= small_n:
     if n % start == 0:

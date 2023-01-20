@@ -13,7 +13,7 @@
 
 n = int(input('Enter number: '))
 
-start  = 1
+start = 1
 small_n = n - 1
 divisors = []
 

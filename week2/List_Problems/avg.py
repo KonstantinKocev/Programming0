@@ -33,7 +33,7 @@ sum_index = 0
 list_len = len(numbers)
 
 for number in numbers:
-    sum_index = sum_index + number
+    sum_index += number
 
 avg = sum_index / list_len
 

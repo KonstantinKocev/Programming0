@@ -23,10 +23,33 @@
 
 n = int(input('Enter number: '))
 
-start = 1
-list_num = []
+start = 6
+count = 1
+small_n = n - 1
 
-while start <= n:
-    if
+while True:
 
-    start += 1
+    divisors = []
+
+    while count <= small_n:
+        if n % count == 0:
+            divisors += [start]
+
+        count += 1
+
+    print(divisors)
+
+
+    while n > 0:
+        if start == sum(divisors):
+            print(start)
+            n -= 1
+            start += 1
+
+        start += 1
+
+    if n == 0:
+        break
+
+    print(start)
+
