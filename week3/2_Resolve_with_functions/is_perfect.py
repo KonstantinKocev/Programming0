@@ -4,6 +4,7 @@ def sum_ints(n):
 		sum_nums += i
 	return sum_nums
 
+
 def is_perfect(n):
 	start = 1
 	small_n = n - 1
@@ -16,9 +17,10 @@ def is_perfect(n):
 		start += 1
 	return sum_ints(divisors)
 
+
 n = int(input('Enter number: '))
 
 if is_perfect(n) == n:
-	print(is_perfect(n), '| Is perfect!')
+	print(n, '| Is perfect!')
 else:
-	print(is_perfect(n), '| Is not perfect!')
+	print(n, '| Is not perfect!')

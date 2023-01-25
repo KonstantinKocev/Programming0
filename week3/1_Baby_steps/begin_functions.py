@@ -3,6 +3,7 @@
 def square(a):
 	return a * a
 
+
 print(square(5), '| Square')
 
 
@@ -19,6 +20,7 @@ def fact(a):
 		start += 1
 	return total_num
 
+
 print(fact(5), '| Factoriel')
 
 
@@ -27,10 +29,11 @@ print(fact(5), '| Factoriel')
 def count_elements(items):
 	counter = 1
 
-	while counter <= len(items):
+	for i in items:
 		counter += 1
 
-	return counter - 1
+	return counter
+
 
 print(count_elements(list(range(10))), '| Count elements')
 
@@ -42,6 +45,7 @@ def member(x, xs):
 		return 'True'
 	else:
 		return 'Fasle'
+
 
 print(member('Python', ['Python', 'Haskel', 'Ruby']), '| Is in list')
 

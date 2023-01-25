@@ -45,10 +45,10 @@ def large_small(n):
 	elif (largest == a and smallest == c) or (largest == c and smallest == a):
 		middle = b
 
-
 	smallest_num = smallest * 100 + middle * 10 + largest
 	max_num = largest * 100 + middle * 10 + smallest
 
 	return smallest_num, max_num
+
 
 print(large_small(192))
