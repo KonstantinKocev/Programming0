@@ -21,7 +21,6 @@ seasons = ["winter", "summer", "summer", "summer", "spring", "spring"]
 
 
 def winter_is_coming(x):
-
     for season in seasons:
         if season == 'winter':
             return True

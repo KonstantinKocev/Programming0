@@ -21,13 +21,13 @@
 vowels = "aeiouyAEIOUY"
 consonants = "bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ"
 
-n = input('Enter your words: ')
+n = input('Enter your word: ')
 
 
 def count_vowels_consonants(word):
     vowels_counter = 0
     consonants_counter = 0
-    for i in n:
+    for i in word:
         if i in vowels:
             vowels_counter += 1
         elif i in consonants:

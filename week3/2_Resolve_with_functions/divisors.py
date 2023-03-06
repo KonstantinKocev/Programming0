@@ -1,12 +1,12 @@
-def divisors(n):
-	start, small_n, divisors = 1, n - 1, []
+def divisors(number):
+	start, small_n, divisor = 1, number - 1, []
 
 	while start <= small_n:
-		if n % start == 0:
-			divisors += [start]
+		if number % start == 0:
+			divisor += [start]
 
 		start += 1
-	return divisors
+	return divisor
 
 
 print(divisors(20))

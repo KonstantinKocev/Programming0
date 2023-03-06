@@ -8,17 +8,12 @@
 
 """
 
-from random import randint
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+for i in numbers:
+    print('this is i', i)
+    for j in numbers:
+        print(j)
 
-def prime_pair(x):
-    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    counter = 0
-    while counter <= len(numbers):
-        sum_nums += (numbers[randint(numbers[0], len(numbers) - 1)] + numbers[randint(numbers[0], len(numbers) - 1)])
-        counter += 1
-    if sum_nums
-    return
-
-
-print(prime_pair([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+if i % (i + j) == 0:
+    print()

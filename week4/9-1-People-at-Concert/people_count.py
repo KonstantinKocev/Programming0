@@ -35,7 +35,7 @@ def get_people_count(x):
             people["Maria"] = person
         if person == "Aneta":
             people["Aneta"] = person
-        return people
+    return people
 
 
 print(len(get_people_count(activity)))

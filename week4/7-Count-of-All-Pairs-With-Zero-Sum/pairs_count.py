@@ -17,13 +17,14 @@ numbers = [0, 2, -2, 5, 10]
 
 
 def count_zero_pairs(n):
-    x = []
+    result = []
     counter = 0
-    for i in numbers:
+    for i in n:
         if i + numbers[counter + 1] == 0:
-            x.append(i)
-            x.append(numbers[counter])
-    return x
+            result.append(i)
+            result.append(numbers[counter])
+        counter += 1
+    return result
 
 
 print(count_zero_pairs(numbers))

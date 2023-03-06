@@ -23,7 +23,7 @@ Enter birth year: 1990
 """
 
 print({'current_age': 2023 - ,
-           'birth_year': int(input('Enter your birth year please: ')),
-           'first_name': input('Enter your first name please: '),
-           'second_name': input('Enter your second name please: '),
-           'third_name': input('Enter your third name please: ')})
+       'birth_year': int(input('Enter your birth year please: ')),
+       'first_name': input('Enter your first name please: '),
+       'second_name': input('Enter your second name please: '),
+       'third_name': input('Enter your third name please: ')})
