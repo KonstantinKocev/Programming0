@@ -44,4 +44,4 @@ def trim(string):
     return string
 
 
-print(trim("python ins cool    "))
+print(trim("  python is cool    "))
