@@ -15,33 +15,43 @@ def join(delimiter, items):
 print(join("\n", ["Hello", "there"]))
 
 
-def startwith(search, string):
+def startswith(search, string):
     counter = 0
-    for i in search:
-        counter += 1
-        if i == string[counter - 1]:
-            return True
+    new_string = string[:len(search)]
+    return search == new_string
 
 
-print(startwith("Py", "Python"))
+print(startswith("Py", "Python"))
 
 
 def endswith(search, string):
-    counter = -2
-    for i in search:
-        if i == string[counter]:
-            counter += 1
-            return True
+    new_string = string[:(len(string) - len(search)) - 1:-1]
+    return search == new_string[::-1]
 
 
 print(endswith("on", "Python"))
 
 
 def trim(string):
+    counter = 0
+    result = ""
     for i in string:
         if i == " ":
-            string.remove(i)
-    return string
+            counter += 1
+        else:
+            break
+    result = string[counter:]
+    new_string = ""
+    flag = False
+    for i in result[::-1]:
+        if i != " ":
+            flag = True
+            new_string += i
+        else:
+            if flag:
+                new_string += " "
+
+    return new_string[::-1]
 
 
-print(trim("  python is cool    "))
+print(trim("   python is amazing      "))
