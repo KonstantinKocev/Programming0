@@ -36,7 +36,7 @@ a = a.lower()
 
 def is_string_palindrom(string):
     new_string = ""
-    all_letters = "abcdefghijklmnopqrstuvwxyz1234567890"
+    all_letters = "abcdefghijklmnopqrstuvwxyz1234567890,.!?"
     for letter in string:
         if letter in all_letters:
             new_string += letter
