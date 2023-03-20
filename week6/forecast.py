@@ -14,32 +14,28 @@ def forecast(days):
     elif counter_sunshine < counter_snow and counter_sunshine < counter_rain\
             or counter_snow < counter_sunshine and counter_snow < counter_rain\
             or counter_rain < counter_sunshine and counter_rain < counter_snow:
-        return one_less_two_stay(counter_rain, counter_sunshine, counter_snow)
+        return min_weather(counter_rain, counter_sunshine, counter_snow)
     else:
         return two_less_one_stay(counter_rain, counter_sunshine, counter_snow)
 
 
 def two_less_one_stay(counter_rain, counter_sunshine, counter_snow):
-    all_weathers = (counter_sunshine, counter_rain, counter_snow)
-    if max(all_weathers) == counter_sunshine:
-        return "Tomorrow will be sunshine."
-    if max(all_weathers) == counter_snow:
-        return "Tomorrow will be snow."
-    if max(all_weathers) == counter_rain:
+    if counter_rain > counter_sunshine and counter_rain > counter_snow:
         return "Tomorrow will be rain."
+    if counter_sunshine > counter_snow and counter_sunshine > counter_rain:
+        return "Tomorrow will be sunshine."
+    if counter_snow > counter_rain and counter_snow > counter_sunshine:
+        return "Tomorrow will be snow."
 
 
-def one_less_two_stay(counter_rain, counter_sunshine, counter_snow):
-    all_weathers = (counter_sunshine, counter_rain, counter_snow)
-    new_weathers = []
-    if min(all_weathers) == counter_snow:
-        new_weathers += "rain", "sunshine"
-    if min(all_weathers) == counter_rain:
-        new_weathers += "snow", "sunshine"
-    if min(all_weathers) == counter_sunshine:
-        new_weathers += "snow", "rain"
-    return "Tomorrow will be " + new_weathers[-1]
+def min_weather(counter_rain, counter_sunshine, counter_snow):
+    if counter_rain < counter_sunshine and counter_rain < counter_snow or counter_rain == 0:
+        return "Tomorrow will be rain."
+    if counter_snow < counter_sunshine and counter_snow < counter_rain or counter_snow == 0:
+        return "Tomorrow will be snow."
+    if counter_sunshine < counter_snow and counter_sunshine < counter_rain or counter_sunshine == 0:
+        return "Tomorrow will be sunshine."
 
 
-days_weather = ["snow", "snow", "rain", "rain", "sunshine", "sunshine"]
+days_weather = ["rain", "sunshine", "snow", "snow"]
 print(forecast(days_weather))
