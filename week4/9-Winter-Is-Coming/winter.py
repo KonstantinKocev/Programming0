@@ -28,5 +28,4 @@ def winter_is_coming(x):
             return False
 
 
-if winter_is_coming(seasons):
-    print('Winter is coming!')
+print(winter_is_coming(seasons))
